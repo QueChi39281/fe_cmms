@@ -31,10 +31,9 @@ button { color: inherit; }
 .panel__header { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 20px 21px 16px; }
 .panel__header h2 { margin: 0 0 4px; font: 700 14px 'Manrope', sans-serif; }
 .panel__header p { margin: 0; color: #99a2ae; font-size: 11px; }
-.text-link { color: #3867e8; font-size: 11px; font-weight: 600; white-space: nowrap; }
-.text-link span { margin-left: 4px; }
+.text-link { display: inline-flex; align-items: center; gap: 4px; color: #3867e8; font-size: 11px; font-weight: 600; white-space: nowrap; }
 .resource-page .page-heading { margin-bottom: 20px; }
 .empty-panel { display: grid; justify-items: center; align-content: center; min-height: 330px; padding: 32px; border: 1px dashed #dfe5ed; border-radius: 12px; background: #fff; text-align: center; }
-.empty-panel__icon { display: grid; place-items: center; width: 52px; height: 52px; margin-bottom: 15px; border-radius: 15px; color: #3867e8; background: #edf2ff; font-size: 22px; }
+.empty-panel__icon { display: grid; place-items: center; width: 52px; height: 52px; margin-bottom: 15px; border-radius: 15px; color: #3867e8; background: #edf2ff; }
 .empty-panel h2 { margin: 0 0 6px; font: 700 16px 'Manrope', sans-serif; }
 .empty-panel p { margin: 0 0 18px; color: #8994a4; font-size: 12px; }

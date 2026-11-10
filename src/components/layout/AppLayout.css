@@ -8,11 +8,11 @@
 .nav-link { display: flex; align-items: center; gap: 11px; min-height: 40px; padding: 0 11px; border-radius: 8px; color: #707c8c; font-size: 12px; font-weight: 500; transition: background .16s, color .16s; }
 .nav-link:hover { color: #3867e8; background: #f7f9ff; }
 .nav-link--active { color: #3867e8; background: #eef3ff; font-weight: 600; }
-.nav-link__icon { display: grid; width: 18px; place-items: center; font-size: 16px; }
+.nav-link__icon { display: grid; width: 18px; place-items: center; }
 .nav-link__count { display: grid; place-items: center; min-width: 19px; height: 19px; margin-left: auto; border-radius: 6px; color: #d98435; background: #fff3e8; font-size: 10px; }
 .sidebar__bottom { margin-top: auto; }
 .help-card { display: flex; align-items: center; gap: 10px; margin: 0 3px 14px; padding: 12px 10px; border: 1px solid #edf0f5; border-radius: 9px; background: #fbfcfe; }
-.help-card__icon { display: grid; flex: 0 0 25px; height: 25px; place-items: center; border-radius: 50%; color: #3867e8; background: #edf2ff; font-size: 12px; font-weight: 700; }
+.help-card__icon { display: grid; flex: 0 0 25px; height: 25px; place-items: center; border-radius: 50%; color: #3867e8; background: #edf2ff; }
 .help-card strong, .help-card span:not(.help-card__icon) { display: block; }
 .help-card strong { margin-bottom: 3px; font-size: 10px; }
 .help-card div span { color: #98a1ad; font-size: 9px; }
@@ -22,7 +22,7 @@
 .profile__details { display: grid; gap: 3px; }
 .profile__details strong { font-size: 11px; }
 .profile__details small { color: #929caa; font-size: 9px; }
-.profile__more { margin-left: auto; color: #96a0ac; font-size: 20px; }
+.profile__more { margin-left: auto; color: #96a0ac; }
 .main-area { width: calc(100% - 238px); min-width: 0; margin-left: 238px; }
 .topbar { position: sticky; z-index: 10; top: 0; display: flex; height: 65px; align-items: center; justify-content: space-between; padding: 0 34px; border-bottom: 1px solid #edf0f4; background: #ffffffed; backdrop-filter: blur(12px); }
 .breadcrumbs { display: flex; align-items: center; gap: 10px; color: #98a2af; font-size: 11px; }
@@ -30,7 +30,7 @@
 .breadcrumbs__slash { color: #d0d5dc; }
 .topbar__actions { display: flex; align-items: center; gap: 17px; }
 .role-switcher select { max-width: 155px; padding: 8px 26px 8px 10px; border: 1px solid #e8ecf1; border-radius: 7px; color: #586474; background: #fff; font-size: 10px; cursor: pointer; }
-.icon-button { position: relative; display: grid; width: 30px; height: 30px; place-items: center; border: 0; border-radius: 8px; color: #788493; background: transparent; font-size: 19px; cursor: pointer; }
+.icon-button { position: relative; display: grid; width: 30px; height: 30px; place-items: center; border: 0; border-radius: 8px; color: #788493; background: transparent; cursor: pointer; }
 .notification-button span { position: absolute; top: 5px; right: 6px; width: 6px; height: 6px; border: 1px solid white; border-radius: 50%; background: #ef786c; }
 .avatar--top { width: 31px; height: 31px; color: #8561bc; background: #f0eaff; font-size: 9px; }
 .page-content { width: 100%; max-width: 1500px; margin: 0 auto; padding: 31px 34px 40px; }

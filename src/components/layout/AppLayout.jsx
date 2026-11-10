@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
+import { Bell, CircleHelp, Menu, MoreHorizontal } from 'lucide-react'
 import { navigationByRole, roles } from '../../config/navigation.js'
 import './AppLayout.css'
 
@@ -30,7 +31,7 @@ export default function AppLayout({ role }) {
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) => `nav-link ${isActive ? 'nav-link--active' : ''}`}
             >
-              <span className="nav-link__icon" aria-hidden="true">{item.icon}</span>
+              <span className="nav-link__icon" aria-hidden="true"><item.icon size={17} strokeWidth={1.8} /></span>
               <span>{item.label}</span>
               {item.path === 'requests' && role.id !== 'equipment-user' && <span className="nav-link__count">5</span>}
             </NavLink>
@@ -38,13 +39,13 @@ export default function AppLayout({ role }) {
         </nav>
         <div className="sidebar__bottom">
           <div className="help-card">
-            <span className="help-card__icon">?</span>
+            <span className="help-card__icon"><CircleHelp size={16} /></span>
             <div><strong>Cần trợ giúp?</strong><span>Liên hệ bộ phận hỗ trợ</span></div>
           </div>
           <button className="profile" type="button">
             <span className="avatar avatar--profile">MA</span>
             <span className="profile__details"><strong>Minh Anh</strong><small>{role.label}</small></span>
-            <span className="profile__more">···</span>
+            <MoreHorizontal className="profile__more" size={20} />
           </button>
         </div>
       </aside>
@@ -53,7 +54,7 @@ export default function AppLayout({ role }) {
 
       <main className="main-area">
         <header className="topbar">
-          <button className="menu-toggle" aria-label="Mở menu" onClick={() => setMenuOpen(true)}>☰</button>
+          <button className="menu-toggle" aria-label="Mở menu" onClick={() => setMenuOpen(true)}><Menu size={18} /></button>
           <div className="breadcrumbs"><span>Không gian làm việc</span><span className="breadcrumbs__slash">/</span><strong>{activeLabel}</strong></div>
           <div className="topbar__actions">
             <label className="role-switcher">
@@ -62,7 +63,7 @@ export default function AppLayout({ role }) {
                 {roles.map((item) => <option value={item.id} key={item.id}>{item.label}</option>)}
               </select>
             </label>
-            <button className="icon-button notification-button" aria-label="Thông báo" type="button">♧<span /></button>
+            <button className="icon-button notification-button" aria-label="Thông báo" type="button"><Bell size={17} /><span /></button>
             <span className="avatar avatar--top">MA</span>
           </div>
         </header>

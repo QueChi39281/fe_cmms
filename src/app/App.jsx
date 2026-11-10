@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
+import HomePage from '../features/auth/pages/HomePage.jsx'
 import AppLayout from '../components/layout/AppLayout.jsx'
 import DashboardPage from '../features/dashboard/DashboardPage.jsx'
 import EquipmentListPage from '../features/equipment/pages/EquipmentListPage.jsx'
@@ -36,7 +37,7 @@ function RoleRoutes() {
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/admin/dashboard" replace />} />
+      <Route path="/" element={<HomePage />} />
       {RoleRoutes()}
       <Route path="*" element={<Navigate to="/admin/dashboard" replace />} />
     </Routes>

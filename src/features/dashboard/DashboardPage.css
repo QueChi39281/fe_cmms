@@ -18,7 +18,7 @@
 .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(250px, 1fr); gap: 15px; }
 .task-list { padding: 0 19px 8px; }
 .task-row { display: flex; align-items: center; gap: 11px; min-height: 63px; border-top: 1px solid #f0f2f5; }
-.task-symbol { display: grid; flex: 0 0 30px; height: 30px; place-items: center; border-radius: 8px; font-size: 13px; }
+.task-symbol { display: grid; flex: 0 0 30px; height: 30px; place-items: center; border-radius: 8px; }
 .task-symbol--blue { color: #4774e7; background: #edf2ff; }
 .task-symbol--amber { color: #d89038; background: #fff5e8; }
 .task-symbol--green { color: #39a77c; background: #eaf8f1; }
@@ -30,7 +30,7 @@
 .status-pill--amber { color: #c78635; background: #fff5e8; }
 .status-pill--green { color: #339771; background: #eaf8f1; }
 .task-time { width: 45px; color: #929daa; font-size: 9px; text-align: right; white-space: nowrap; }
-.more-button { border: 0; color: #8e99a7; background: transparent; font-size: 20px; cursor: pointer; }
+.more-button { display: grid; place-items: center; border: 0; color: #8e99a7; background: transparent; cursor: pointer; }
 .health-score { display: flex; align-items: center; gap: 13px; padding: 10px 21px 16px; }
 .donut { display: grid; width: 76px; height: 76px; flex: 0 0 76px; place-items: center; border-radius: 50%; background: conic-gradient(#4eb88e 0 70%, #84d2ae 70% 96.8%, #edf1f5 96.8% 100%); position: relative; }
 .donut::before { position: absolute; width: 59px; height: 59px; border-radius: 50%; background: #fff; content: ''; }
